@@ -1,0 +1,5 @@
+*.bib
+*.org
+experiencia/
+data/*
+!data/contracts_sample.csv
