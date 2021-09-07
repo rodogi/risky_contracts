@@ -41,7 +41,7 @@ new_cols <- c("FSz",
 
 
 federal %>%
-  select(all_of(some_cols)) %>%
+  dplyr::select(all_of(some_cols)) %>%
   rename_at(vars(some_cols), ~ new_cols) %>%
  ggcorr(nbreaks = 5, method=c("pairwise", "pearson"),
         geom="circle", hjust = 0.50, size = 3, color = "grey50") +
